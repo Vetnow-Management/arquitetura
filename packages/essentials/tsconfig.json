@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/test",
+    "coverage"
+  ]
+}
