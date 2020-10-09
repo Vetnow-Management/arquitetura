@@ -11,7 +11,8 @@
     "build": "concurrently \"yarn clean-cache\" \"rollup -c\" ",
     "prep-local": "yarn build",
     "clean-cache": "concurrently \"rimraf ./dist\" \"rimraf ./coverage\"",
-    "remove-node_modules": "rm -rf ./node_modules"
+    "remove-node_modules": "rm -rf ./node_modules",
+    "test": "jest"
   },
   "peerDependencies": {
     "axios": "^0.19.2",

@@ -7,9 +7,11 @@
   ],
   "scripts": {
     "bootstrap": "concurrently \"lerna bootstrap --use-workspaces\" \"lerna exec yarn prep-local\" ",
-    "build": "lerna exec yarn build",
-    "clean": "lerna exec yarn clean-cache",
-    "exec-publish": "lerna exec yarn pack",
+    "build": "lerna exec -- yarn build",
+    "test": "lerna run test",
+    "clean": "lerna exec -- yarn clean-cache",
+    "storybook": "lerna exec --scope @vetnow-management/components yarn start",
+    "exec-publish": "lerna exec -- yarn pack",
     "remove-node_modules": "concurrently \"lerna exec yarn remove-node_modules\" \"rm -rf ./node_modules\" "
   },
   "license": "ISC",

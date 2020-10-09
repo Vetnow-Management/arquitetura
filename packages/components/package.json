@@ -6,11 +6,11 @@
   "jsnext:main": "build/index.es.js",
   "type": "./dist/index.d.ts",
   "scripts": {
+    "start": "start-storybook",
     "clean-cache": "concurrently \"rimraf ./dist\" \"rimraf ./dist-storybook\"",
     "prep-local": "concurrently \"yarn clean-cache\"",
-    "build": "rollup -c",
+    "build": "concurrently \"yarn clean-cache\" \"rollup -c\" ",
     "build-storybook": "yarn clean && build-storybook -s public -c .storybook -o dist-storybook",
-    "prepare": "yarn run build",
     "remove-node_modules": "rm -rf ./node_modules"
   },
   "files": [
@@ -55,11 +55,11 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.1",
     "typescript": "^3.9.7",
-    "@vetnow-management/essentials": "^0.0.1"
+    "@vetnow-management/essentials": "^0.0.3"
   },
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "@vetnow-management/essentials": "^0.0.1"
+    "@vetnow-management/essentials": "^0.0.3"
   }
 }

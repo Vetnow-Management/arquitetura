@@ -10,4 +10,12 @@ module.exports = {
     'src/main/**/*.ts',
     '!src/**/index.ts'
   ],
+  "moduleNameMapper": {
+    "^lodash-es$": "lodash"
+  },
+  globals: {
+    'ts-jest': {
+      tsConfig: 'tsconfig.test.json'
+    }
+  }
 }
