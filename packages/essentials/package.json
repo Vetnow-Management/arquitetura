@@ -1,6 +1,6 @@
 {
   "name": "@vetnow-management/essentials",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "./dist/indexd.d.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
