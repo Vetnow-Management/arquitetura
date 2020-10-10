@@ -24,6 +24,9 @@
   "engines": {
     "node": ">=0.12"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.5",

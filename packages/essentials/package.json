@@ -14,6 +14,9 @@
     "remove-node_modules": "rm -rf ./node_modules",
     "test": "jest"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "axios": "^0.19.2",
     "axios-observable": "^1.1.3",
