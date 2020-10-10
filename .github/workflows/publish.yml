@@ -28,6 +28,6 @@ jobs:
 #      - run: npx lerna version patch --no-push --yes
 #      - run: git push --tags && git push
       - run: yarn build
-      - run: npx lerna publish
+      - run: npx lerna publish --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
